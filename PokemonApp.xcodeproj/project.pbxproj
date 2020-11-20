@@ -19,6 +19,7 @@
 		1244F1EC256631810097ECE6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F1EB256631810097ECE6 /* Pokemon.swift */; };
 		1244F1F1256637470097ECE6 /* PokemonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F1F0256637470097ECE6 /* PokemonDTO.swift */; };
 		1244F1F72566406A0097ECE6 /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F1F62566406A0097ECE6 /* PokemonMapper.swift */; };
+		1244F30125678A640097ECE6 /* PokeDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F30025678A640097ECE6 /* PokeDbManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		1244F1EB256631810097ECE6 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1244F1F0256637470097ECE6 /* PokemonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDTO.swift; sourceTree = "<group>"; };
 		1244F1F62566406A0097ECE6 /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
+		1244F30025678A640097ECE6 /* PokeDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDbManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +109,11 @@
 		1244F17E2564D9ED0097ECE6 /* PokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				1244F2FF25678A520097ECE6 /* PokeStorage */,
+				1244F2FE2567888B0097ECE6 /* ViewControllers */,
 				1244F1E4256630B20097ECE6 /* PokeClient */,
 				1244F17F2564D9ED0097ECE6 /* AppDelegate.swift */,
 				1244F1812564D9ED0097ECE6 /* SceneDelegate.swift */,
-				1244F1832564D9ED0097ECE6 /* ViewController.swift */,
 				1244F1852564D9ED0097ECE6 /* Main.storyboard */,
 				1244F1882564D9F10097ECE6 /* Assets.xcassets */,
 				1244F18A2564D9F10097ECE6 /* LaunchScreen.storyboard */,
@@ -162,6 +165,22 @@
 				1244F1F62566406A0097ECE6 /* PokemonMapper.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		1244F2FE2567888B0097ECE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1244F1832564D9ED0097ECE6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1244F2FF25678A520097ECE6 /* PokeStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1244F30025678A640097ECE6 /* PokeDbManager.swift */,
+			);
+			path = PokeStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +319,7 @@
 				1244F1F72566406A0097ECE6 /* PokemonMapper.swift in Sources */,
 				1244F1E6256630D60097ECE6 /* PokeClient.swift in Sources */,
 				1244F1EC256631810097ECE6 /* Pokemon.swift in Sources */,
+				1244F30125678A640097ECE6 /* PokeDbManager.swift in Sources */,
 				1244F1F1256637470097ECE6 /* PokemonDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
