@@ -20,7 +20,10 @@ class PokemonMapper {
         let games = pokeDto.gameIndices!.map { (gameIndex) -> String in
             return (gameIndex.version?.name! ?? "")
         }
+        let abilities = pokeDto.abilities!.map { (ability) -> String in
+            return ability.ability?.name ?? ""
+        }
         
-        return Pokemon(id: id, name: name, images: image, types: types, height: height, weight: weight, games: games)
+        return Pokemon(id: id, name: name, images: image, types: types, height: height, weight: weight, games: games, abilities: abilities)
     }
 }

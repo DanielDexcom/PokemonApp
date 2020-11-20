@@ -11,6 +11,7 @@ import UIKit
 class PokeDexViewController: UITableViewController {
     
     var pokemons: [Pokemon]?
+    var selectedIndex: Int?
     
     override func viewWillAppear(_ animated: Bool) {
         pokemons = PokeDbManager.shared.fetchPokemons()
@@ -25,14 +26,9 @@ class PokeDexViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PokeCell") as! PokeDexCell
         if let pokemon = pokemons?[indexPath.row] {
             
-            if let data = try? Data(contentsOf: URL(string: pokemon.images)!) {
-                if let pokeImage = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        cell.pokeImageView.image = pokeImage
-                    }
-                }
+            DispatchQueue.main.async {
+                cell.pokeImageView.image = UIImage.ImageFromURL(url: pokemon.images)
             }
-
             
             cell.pokeName.text = pokemon.name
         }
@@ -42,9 +38,15 @@ class PokeDexViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Should perform the segue here, maybe have a member variable to set the selected indexPath
         // so we can know which pokemon send to the DetailViewController
+        selectedIndex = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: false)
+        self.performSegue(withIdentifier: "pokeDetailSegue", sender: self)
     }
     
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        // Perform segue and instantiate the target VC using the sender to pass data
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PokeDetailViewController {
+            vc.pokemon = pokemons?[self.selectedIndex ?? 0]
+        }
     }
 }

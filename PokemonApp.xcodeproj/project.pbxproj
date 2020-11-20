@@ -25,6 +25,8 @@
 		1244F3312567AAB90097ECE6 /* String+Capitalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F3302567AAB90097ECE6 /* String+Capitalize.swift */; };
 		1244F3362567B2540097ECE6 /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F3352567B2540097ECE6 /* PokeDexViewController.swift */; };
 		1244F33B2567B4230097ECE6 /* PokeDexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F33A2567B4230097ECE6 /* PokeDexCell.swift */; };
+		1271256725686A7A00BE0AE1 /* PokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1271256625686A7A00BE0AE1 /* PokeDetailViewController.swift */; };
+		1271256C25686BE000BE0AE1 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1271256B25686BE000BE0AE1 /* UIImage+URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		1244F3302567AAB90097ECE6 /* String+Capitalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Capitalize.swift"; sourceTree = "<group>"; };
 		1244F3352567B2540097ECE6 /* PokeDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
 		1244F33A2567B4230097ECE6 /* PokeDexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexCell.swift; sourceTree = "<group>"; };
+		1271256625686A7A00BE0AE1 /* PokeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDetailViewController.swift; sourceTree = "<group>"; };
+		1271256B25686BE000BE0AE1 /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 			children = (
 				1244F1832564D9ED0097ECE6 /* SearchPokemonViewController.swift */,
 				1244F3352567B2540097ECE6 /* PokeDexViewController.swift */,
+				1271256625686A7A00BE0AE1 /* PokeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				1244F3302567AAB90097ECE6 /* String+Capitalize.swift */,
+				1271256B25686BE000BE0AE1 /* UIImage+URL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,12 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1271256725686A7A00BE0AE1 /* PokeDetailViewController.swift in Sources */,
 				1244F33B2567B4230097ECE6 /* PokeDexCell.swift in Sources */,
 				1244F3362567B2540097ECE6 /* PokeDexViewController.swift in Sources */,
 				1244F1842564D9ED0097ECE6 /* SearchPokemonViewController.swift in Sources */,
 				1244F1802564D9ED0097ECE6 /* AppDelegate.swift in Sources */,
 				1244F1822564D9ED0097ECE6 /* SceneDelegate.swift in Sources */,
 				1244F1F72566406A0097ECE6 /* PokemonMapper.swift in Sources */,
+				1271256C25686BE000BE0AE1 /* UIImage+URL.swift in Sources */,
 				1244F1E6256630D60097ECE6 /* PokeClient.swift in Sources */,
 				1244F325256795AB0097ECE6 /* PokeDataView.swift in Sources */,
 				1244F3312567AAB90097ECE6 /* String+Capitalize.swift in Sources */,

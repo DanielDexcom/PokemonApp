@@ -18,8 +18,9 @@ struct Pokemon {
     let weight: Int
     let types: [String]
     let games: [String]
+    let abilities: [String]
     
-    init(id: Int?, name: String?, images: String?, types: [String], height: Int?, weight: Int?, games: [String]?) {
+    init(id: Int?, name: String?, images: String?, types: [String], height: Int?, weight: Int?, games: [String]?, abilities: [String]?) {
         self.name = name?.capitalizingFirstLetter() ?? ""
         self.images = images ?? ""
         self.types = types 
@@ -27,6 +28,7 @@ struct Pokemon {
         self.weight = weight ?? 0
         self.id = id ?? 0
         self.games = games ?? []
+        self .abilities = abilities ?? []
     }
     
 

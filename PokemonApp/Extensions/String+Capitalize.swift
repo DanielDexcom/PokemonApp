@@ -15,4 +15,13 @@ extension String {
     mutating func capitalizeFirstLetter() {
       self = self.capitalizingFirstLetter()
     }
+    
+    static func stringFromArrayWihtBreakLine(strings: [String]) -> String {
+        var string = ""
+        strings.forEach { (str) in
+            let localString = str.capitalizingFirstLetter()
+            string.append(localString + "\n")
+        }
+        return string
+    }
 }
