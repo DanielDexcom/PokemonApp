@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokeDataView" customModule="PokemonApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="G0g-cn-zSt"/>
+                <outlet property="loadingIndicator" destination="ftY-hj-5kO" id="wsM-ge-BzC"/>
+                <outlet property="textContent" destination="jOK-Rr-D0T" id="tfn-Uc-uuU"/>
+                <outlet property="title" destination="sob-VY-4OC" id="4qg-dj-lsE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sob-VY-4OC">
+                    <rect key="frame" x="20" y="0.0" width="309" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOK-Rr-D0T">
+                    <rect key="frame" x="20" y="0.0" width="309" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ftY-hj-5kO">
+                    <rect key="frame" x="164" y="47" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jOK-Rr-D0T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="04s-zO-kZ0"/>
+                <constraint firstItem="ftY-hj-5kO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7kQ-Da-BU7"/>
+                <constraint firstItem="ftY-hj-5kO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EbD-BU-0JI"/>
+                <constraint firstItem="sob-VY-4OC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Fd7-aJ-nVK"/>
+                <constraint firstItem="sob-VY-4OC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G8V-bQ-thG"/>
+                <constraint firstAttribute="trailing" secondItem="sob-VY-4OC" secondAttribute="trailing" constant="20" id="N46-Rv-aGN"/>
+                <constraint firstItem="jOK-Rr-D0T" firstAttribute="top" secondItem="sob-VY-4OC" secondAttribute="bottom" id="ihk-OV-HxT"/>
+                <constraint firstAttribute="trailing" secondItem="jOK-Rr-D0T" secondAttribute="trailing" constant="20" id="vO7-rh-1wa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="93.478260869565219" y="-151.67410714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

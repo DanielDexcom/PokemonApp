@@ -1,0 +1,18 @@
+//
+//  String+Capitalize.swift
+//  PokemonApp
+//
+//  Created by Daniel Moreno on 11/19/20.
+//
+
+import Foundation
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+      return prefix(1).uppercased() + self.lowercased().dropFirst()
+    }
+
+    mutating func capitalizeFirstLetter() {
+      self = self.capitalizingFirstLetter()
+    }
+}

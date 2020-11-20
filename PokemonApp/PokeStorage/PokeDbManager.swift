@@ -9,7 +9,7 @@ import Foundation
 
 class PokeDbManager {
     
-    let shared = PokeDbManager()
+    static let shared = PokeDbManager()
 
     private var pokemons: [Pokemon]
     

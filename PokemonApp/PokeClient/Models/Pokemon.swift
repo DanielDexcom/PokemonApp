@@ -20,7 +20,7 @@ struct Pokemon {
     let games: [String]
     
     init(id: Int?, name: String?, images: String?, types: [String], height: Int?, weight: Int?, games: [String]?) {
-        self.name = name ?? ""
+        self.name = name?.capitalizingFirstLetter() ?? ""
         self.images = images ?? ""
         self.types = types 
         self.height = height ?? 0
